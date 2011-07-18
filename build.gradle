@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  groovy 'org.codehaus.groovy:groovy-all:1.7.10'
+  testCompile 'org.codehaus.geb:geb-spock:0.5.1'
+  //testCompile 'org.codehaus.geb:geb-spock:0.6.0'
+  testCompile 'org.spockframework:spock-core:0.5-groovy-1.7'
+
+  testCompile "org.seleniumhq.selenium:selenium-firefox-driver:2.0b1"
+}
+
